@@ -11,6 +11,8 @@ print(f"The average is of the three scores which are {course1} {course2} {course
 
 
 smallest_grade = course_grade1
+
+id(smallest_grade)
 if course_grade2 < smallest_grade:
     smallest_grade = course_grade2
 

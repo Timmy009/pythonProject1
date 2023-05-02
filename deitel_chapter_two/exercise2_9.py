@@ -11,6 +11,5 @@ if name1_interger_sum > name2_interger_sum:
 else:
     print("Jim plays first")
 
-print(ord('B'), ord('C'), ord('D'), ord('b'), ord('c'),
-      ord('d'), ord('0'), ord('1'),
+print(ord('B'), ord('C'), ord('D'), ord('b'), ord('c'), ord('d'), ord('0'), ord('1'),
       ord('2'), ord('$'), ord('*'), ord('+'), ord(' '))

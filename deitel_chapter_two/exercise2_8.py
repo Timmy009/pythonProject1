@@ -1,5 +1,5 @@
 
-n = 0;
+n = 0
 bacteria = 200 * 2 ** n
 
 print("Hour\t\tNumber of Bacteria")
