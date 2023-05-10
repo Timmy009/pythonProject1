@@ -1,0 +1,5 @@
+1 laptop 500 
+02 charger 400 
+03 keyboard 750 
+04 bag 509 
+05 battery 650 

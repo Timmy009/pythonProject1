@@ -1,0 +1,8 @@
+number = list(range(1, 21))
+print(number)
+print(number[2])
+print(number[: 5])
+print(number[: 10])
+print(number[15:21])
+print(number[::-1])
+print(number[-1: -4:-1])

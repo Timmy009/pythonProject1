@@ -1,5 +1,9 @@
 lst = [25, 10, 15, 5, 30, 55, 35, 45, 20]
 
+# lst.sort(reverse=True)
+lst = lst * 2
+print(lst)
+print(lst.index(10))
 
 def sort(lst):
     for i in range(len(lst)):

@@ -1,11 +1,11 @@
-# stack = []
-# print(stack)
-# stack.append("timmy")
-# print(stack)
-# stack.append("Tayo")
-# print(stack)
-# stack.pop()
-# print(stack)
+stack = []
+print(stack)
+stack.append("timmy")
+print(stack)
+stack.append("Tayo")
+print(stack)
+stack.pop()
+print(stack)
 
 letters = ("a", "b", "c")
 print(letters)
