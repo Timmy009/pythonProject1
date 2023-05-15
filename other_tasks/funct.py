@@ -10,8 +10,18 @@ def add(*args):
     for nu in args:
         product = product + nu
     return product
-
 n = [2, 4, 5, 6, 7]
+
+def add2(a, b):
+    try:
+        return a * b
+    except TypeError:
+        return "Invalid"
+
+
+
+print(add2("hg", "h"))
+
 
 
 
