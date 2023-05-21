@@ -1,59 +1,26 @@
-tlds = {'Canada': 'ca', 'United States': 'us', 'Mexico': 'mx'}
+staff_dictionary = {
+    1234: {
+        "name": "John Doe",
+        "date_of_birth": "1985-07-15",
+        "office_branch": "New York"
+    },
+    5678: {
+        "name": "Jane Smith",
+        "date_of_birth": "1990-03-22",
+        "office_branch": "London"
+    },
+    9012: {
+        "name": "Michael Johnson",
+        "date_of_birth": "1978-11-10",
+        "office_branch": "Tokyo"
+    }
+}
 
-def show_abbreviation():
-    country = input("Enter a country name: ")
-    if country in tlds:
-        abbreviation = tlds[country]
-        print(f"The abbreviation of {country} is {abbreviation}")
-    else:
-        print("Country not found in the dictionary.")
-
-def display_key_value_pairs():
-    print("Key\t\tValue")
-    print("------------------")
-    for country, abbreviation in tlds.items():
-        print(f"{country}\t\t{abbreviation}")
-
-def add_or_update_pair():
-    country = input("Enter a country name: ")
-    abbreviation = input("Enter the abbreviation: ")
-    tlds[country] = abbreviation
-    print("Key-value pair added/updated successfully.")
-
-def create_reverse_dictionary():
-    reverse_tlds = {abbreviation: country for country, abbreviation in tlds.items()}
-    print("Reverse dictionary created successfully:")
-    print(reverse_tlds)
-
-def convert_abbreviations_to_uppercase():
-    uppercase_tlds = {country: abbreviation.upper() for country, abbreviation in tlds.items()}
-    print("Abbreviations converted to uppercase successfully:")
-    print(uppercase_tlds)
-
-# Prompt the user for the manipulation option
-while True:
-    print("\nDictionary Manipulation Options:")
-    print("a) Show the abbreviation of a country")
-    print("b) Display all key-value pairs")
-    print("c) Add/change a key-value pair")
-    print("d) Create a reverse dictionary")
-    print("e) Convert abbreviations to uppercase")
-    print("q) Quit the program")
-
-    choice = input("Enter your choice: ")
-    print("------------------")
-
-    if choice == 'a':
-        show_abbreviation()
-    elif choice == 'b':
-        display_key_value_pairs()
-    elif choice == 'c':
-        add_or_update_pair()
-    elif choice == 'd':
-        create_reverse_dictionary()
-    elif choice == 'e':
-        convert_abbreviations_to_uppercase()
-    elif choice == 'q':
-        break
-    else:
-        print("Invalid choice. Please try again.")
+# Display the dictionary's contents
+for personnel_number, staff_info in staff_dictionary.items():
+    print(f"Personnel Number: {personnel_number}")
+    print("Staff Information:")
+    print(f"  Name: {staff_info['name']}")
+    print(f"  Date of Birth: {staff_info['date_of_birth']}")
+    print(f"  Office Branch: {staff_info['office_branch']}")
+    print()
