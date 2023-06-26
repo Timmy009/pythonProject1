@@ -3,11 +3,10 @@ from diaryApp.entry import Entry
 
 class Diary:
     def __init__(self, username, password):
-        self.__gists = []
+        self.__gists: list[Entry] = []
         self.__username = username
         self.__password = password
         self.__is_locked = True
-
 
     def is_locked(self):
         return self.__is_locked
@@ -20,7 +19,7 @@ class Diary:
         self.__is_locked = True
 
     def create_gist(self, title, body):
-        gist = Entry(title, body)
+        gist: Entry = Entry(title, body)
         self.__gists.append(gist)
 
     def gist_count(self):
@@ -28,4 +27,5 @@ class Diary:
 
     def delete_gist(self, title):
         for entry in self.__gists:
-            if entry
+            if entry.get_title() == title:
+                self.__gists.remove(entry)
